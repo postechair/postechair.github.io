@@ -76,9 +76,9 @@ export default function Home() {
           <div className="wrap">
             <h2 className="sech">AIR 플랫폼</h2>
             <div className="aaep">
-              <h3>AAEP — Agentic AI Enterprise Platform</h3>
+              <h3>PAAIP (POSTECH Agentic AI Institute Platform)</h3>
               <span className="pill-building">구축 중</span>
-              <p>AAEP는 AIR센터가 구축 중인 <b>전사 에이전틱 AI 플랫폼</b>입니다. AI 에이전트가 대학 업무를 수행할 때 필요한 <b>거버넌스 통제면</b>(행동 정책 통제 · 행 수준 데이터 권한 · 변조 불가 감사 추적)을 기반으로, 구성원 누구나 안전하게 업무 AI를 활용할 수 있는 환경을 목표로 합니다. 세부 내용은 구축 진행에 따라 단계적으로 공개됩니다.</p>
+              <p>PAAIP는 AIR센터가 구축 중인 <b>전사 에이전틱 AI 플랫폼</b>입니다. AI 에이전트가 대학 업무를 수행할 때 필요한 <b>거버넌스 통제면</b>(행동 정책 통제 · 행 수준 데이터 권한 · 변조 불가 감사 추적)을 기반으로, 구성원 누구나 안전하게 업무 AI를 활용할 수 있는 환경을 목표로 합니다. 세부 내용은 구축 진행에 따라 단계적으로 공개됩니다.</p>
             </div>
             <div className="sols">
               {SOLUTIONS.map((s) => (
