@@ -54,7 +54,10 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
 .aaep b { color: var(--fg-strong); }
 .sols { margin-top: 16px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .sol { border: 1px solid var(--line-subtle); border-radius: 12px; padding: 14px 16px; background: var(--bg-elevated); }
+.sol .k-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .sol .k { font-size: 12.5px; font-weight: 700; color: var(--primary); }
+.sol-badge { font-size: 11px; font-weight: 700; color: var(--primary-heavy); background: var(--primary-bg); border-radius: 999px; padding: 3px 8px; white-space: nowrap; }
+.sol-badge.live { background: var(--primary); color: #fff; }
 .sol h3 { margin: 4px 0 6px; font-size: 15px; font-weight: 700; color: var(--fg-strong); }
 .sol p { margin: 0; font-size: 13px; line-height: 1.55; color: var(--fg-alternative); }
 /* 대표 솔루션 강조 (전폭) */
