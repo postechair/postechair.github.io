@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+*.tsbuildinfo
+
+# misc
+.DS_Store
+*.log
+
+# 검증 산출물
+visual/out/
+visual/serve/
