@@ -6,7 +6,7 @@ const NEWS = [
     date: "2026. 07. 13",
     cat: "행사",
     title: "2026 AIR EVENT — 나에게 맞는 AI 행사 찾기",
-    desc: "Working Group · 고급교육 · 공모전, 2026 하반기 3개 행사의 안내와 신청이 시작되었습니다.",
+    desc: "Working Group · AX부트캠프(고급교육) · 공모전, 2026 하반기 3개 행사의 안내와 신청이 시작되었습니다.",
     href: "/event/",
   },
 ];
@@ -47,7 +47,7 @@ export default function Home() {
             <div className="cards">
               <a className="card" href="/event/">
                 <span className="card-t">2026 AIR EVENT</span>
-                <span className="card-d">Working Group · 고급교육(AX Leaders) · 공모전 — 2026 하반기 3개 행사 안내와 신청</span>
+                <span className="card-d">Working Group · AX부트캠프(고급교육) · 공모전 — 2026 하반기 3개 행사 안내와 신청</span>
                 <span className="card-go">바로가기 →</span>
               </a>
             </div>
