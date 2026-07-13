@@ -1,16 +1,5 @@
 import wordmark from "@/assets/postech-wordmark-black.png";
 
-/** AIR 자체 작성 소식만 게재 (외부 기사 재게시 없음 — 큐레이터 소식은 법무검토 후 별도) */
-const NEWS = [
-  {
-    date: "2026. 07. 13",
-    cat: "행사",
-    title: "2026 AIR EVENT — 나에게 맞는 AI 행사 찾기",
-    desc: "Working Group · AX부트캠프(고급교육) · 공모전, 2026 하반기 3개 행사의 안내와 신청이 시작되었습니다.",
-    href: "/event/",
-  },
-];
-
 /** 교내망 전용 솔루션 — 공개 페이지에는 이름·설명만 (내부 링크·포트 게재 금지 원칙) */
 const SOLUTIONS = [
   { k: "데이터 포털", t: "IR · KPI · 데이터 카탈로그", d: "대학 KPI 정의서, 데이터 연동맵, 기관연구(IR) 분석을 제공합니다.", featured: true },
@@ -57,24 +46,6 @@ export default function Home() {
 
         <section className="sec alt">
           <div className="wrap">
-            <h2 className="sech">AIR 소식</h2>
-            <div className="news">
-              {NEWS.map((n) => (
-                <a className="nrow" href={n.href} key={n.title}>
-                  <span className="cat">{n.cat}</span>
-                  <span className="nt">
-                    <span className="t">{n.title}</span>
-                    <span className="d">{n.desc}</span>
-                  </span>
-                  <span className="date">{n.date}</span>
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="sec">
-          <div className="wrap">
             <h2 className="sech">AIR 플랫폼</h2>
             <div className="aaep">
               <h3>PAAIP (POSTECH Agentic AI Institute Platform)</h3>
@@ -94,7 +65,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="sec alt about">
+        <section className="sec about">
           <div className="wrap">
             <h2 className="sech">AIR센터</h2>
             <p>AIR센터(Center for AI &amp; Institutional Research)는 POSTECH의 AI-Native University 전략을 추진하며, 데이터 기반 의사결정과 구성원의 AI 역량 강화를 지원합니다.</p>

@@ -46,16 +46,6 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
 .card-d { margin-top: 9px; font-size: 13px; line-height: 1.55; color: var(--fg-alternative); flex: 1; }
 .card-go { margin-top: 14px; font-size: 13px; font-weight: 700; color: var(--primary); }
 
-/* AIR 소식 */
-.news { display: flex; flex-direction: column; gap: 10px; }
-.nrow { display: flex; align-items: center; gap: 14px; border: 1px solid var(--line-subtle); border-radius: 12px; padding: 14px 18px; background: var(--bg-elevated); color: inherit; }
-a.nrow:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-emphasize); color: inherit; }
-.nrow .cat { flex: none; font-size: 12px; font-weight: 700; color: var(--primary-heavy); background: var(--primary-bg); border-radius: 999px; padding: 4px 10px; white-space: nowrap; }
-.nrow .nt { display: flex; flex-direction: column; gap: 3px; }
-.nrow .t { font-size: 15px; font-weight: 700; color: var(--fg-strong); }
-.nrow .d { font-size: 13.5px; line-height: 1.5; color: var(--fg-alternative); }
-.nrow .date { margin-left: auto; flex: none; font-size: 12.5px; color: var(--fg-assistive); }
-
 /* AIR 플랫폼 */
 .aaep { border: 1px solid var(--line-subtle); border-left: 4px solid var(--primary); border-radius: 13px; padding: 20px 20px; background: var(--bg-elevated); box-shadow: var(--shadow-emphasize); }
 .aaep h3 { margin: 0; display: inline; font-size: 17px; font-weight: 800; color: var(--fg-strong); letter-spacing: -.01em; }
