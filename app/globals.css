@@ -19,8 +19,9 @@ a:hover { color: var(--primary-strong); }
 
 .hero { background: linear-gradient(135deg, #A61955 0%, #7E1444 100%); color: #fff; }
 .hero .wrap { max-width: 1040px; margin: 0 auto; padding: 72px 24px 64px; }
-.hero h1 { margin: 0; font-size: 40px; font-weight: 700; letter-spacing: -.03em; line-height: 1.15; color: #fff; }
-.hero p { margin: 16px 0 0; font-size: 16px; line-height: 1.6; opacity: .92; max-width: 60ch; }
+.hero h1 { margin: 0; font-size: 44px; font-weight: 700; letter-spacing: -.02em; line-height: 1.15; color: #fff; }
+.hero-sub { margin: 12px 0 0; font-size: 17px; font-weight: 600; letter-spacing: .05em; opacity: .9; }
+.sec-intro { margin: 0 0 16px; font-size: 14.5px; line-height: 1.6; color: var(--fg-neutral); }
 
 .sec { padding: 56px 24px; }
 .sec .wrap { max-width: 1040px; margin: 0 auto; }
@@ -45,7 +46,30 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
 .card-d { margin-top: 9px; font-size: 13px; line-height: 1.55; color: var(--fg-alternative); flex: 1; }
 .card-go { margin-top: 14px; font-size: 13px; font-weight: 700; color: var(--primary); }
 
-.about { background: var(--bg-alternative); border-top: 1px solid var(--line-subtle); border-bottom: 1px solid var(--line-subtle); }
+/* AIR 소식 */
+.news { display: flex; flex-direction: column; gap: 10px; }
+.nrow { display: flex; align-items: center; gap: 14px; border: 1px solid var(--line-subtle); border-radius: 12px; padding: 14px 18px; background: var(--bg-elevated); color: inherit; }
+a.nrow:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-emphasize); color: inherit; }
+.nrow .cat { flex: none; font-size: 12px; font-weight: 700; color: var(--primary-heavy); background: var(--primary-bg); border-radius: 999px; padding: 4px 10px; white-space: nowrap; }
+.nrow .nt { display: flex; flex-direction: column; gap: 3px; }
+.nrow .t { font-size: 15px; font-weight: 700; color: var(--fg-strong); }
+.nrow .d { font-size: 13.5px; line-height: 1.5; color: var(--fg-alternative); }
+.nrow .date { margin-left: auto; flex: none; font-size: 12.5px; color: var(--fg-assistive); }
+
+/* AIR 플랫폼 */
+.aaep { border: 1px solid var(--line-subtle); border-left: 4px solid var(--primary); border-radius: 13px; padding: 20px 20px; background: var(--bg-elevated); box-shadow: var(--shadow-emphasize); }
+.aaep h3 { margin: 0; display: inline; font-size: 17px; font-weight: 800; color: var(--fg-strong); letter-spacing: -.01em; }
+.pill-building { margin-left: 10px; font-size: 12px; font-weight: 700; color: var(--primary-heavy); background: var(--primary-bg); border-radius: 999px; padding: 4px 10px; white-space: nowrap; vertical-align: middle; }
+.aaep p { margin: 12px 0 0; font-size: 14.5px; line-height: 1.7; color: var(--fg-neutral); }
+.aaep b { color: var(--fg-strong); }
+.sols { margin-top: 16px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.sol { border: 1px solid var(--line-subtle); border-radius: 12px; padding: 14px 16px; background: var(--bg-elevated); }
+.sol .k { font-size: 12.5px; font-weight: 700; color: var(--primary); }
+.sol h3 { margin: 4px 0 6px; font-size: 15px; font-weight: 700; color: var(--fg-strong); }
+.sol p { margin: 0; font-size: 13px; line-height: 1.55; color: var(--fg-alternative); }
+.sol-note { margin: 14px 0 0; font-size: 13px; color: var(--fg-alternative); }
+
+.sec.alt { background: var(--bg-alternative); border-top: 1px solid var(--line-subtle); border-bottom: 1px solid var(--line-subtle); }
 .about p { margin: 0; font-size: 14.5px; line-height: 1.7; color: var(--fg-neutral); max-width: 68ch; }
 .about .more { display: inline-block; margin-top: 12px; font-size: 13.5px; font-weight: 700; }
 
@@ -56,8 +80,12 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
 
 @media (max-width: 640px) {
   .hero .wrap { padding: 48px 16px 44px; }
-  .hero h1 { font-size: 30px; }
+  .hero h1 { font-size: 32px; }
+  .hero-sub { font-size: 14.5px; }
   .sec { padding: 40px 16px; }
   .cards { grid-template-columns: 1fr; }
+  .sols { grid-template-columns: 1fr; }
+  .nrow { flex-wrap: wrap; }
+  .nrow .date { margin-left: 0; width: 100%; }
   .site-footer .wrap { flex-wrap: wrap; }
 }

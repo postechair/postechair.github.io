@@ -3,9 +3,9 @@ import "@/styles/styles.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "POSTECH AI 시리즈 | AIR센터",
+  title: "POSTECH AIR | Center for AI & Institutional Research",
   description:
-    "포스텍 구성원의 AI 전환(AX)을 돕는 교육·실습·챌린지 프로그램 — POSTECH AIR센터.",
+    "POSTECH AIR센터 — AI-Native University 전략과 구성원의 AI 전환(AX)을 돕는 교육·실습·챌린지 프로그램, AI 플랫폼.",
 };
 
 export default function RootLayout({
