@@ -67,6 +67,11 @@ a.nrow:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
 .sol .k { font-size: 12.5px; font-weight: 700; color: var(--primary); }
 .sol h3 { margin: 4px 0 6px; font-size: 15px; font-weight: 700; color: var(--fg-strong); }
 .sol p { margin: 0; font-size: 13px; line-height: 1.55; color: var(--fg-alternative); }
+/* 대표 솔루션 강조 (전폭) */
+.sol.featured { grid-column: 1 / -1; border-left: 4px solid var(--primary); padding: 20px 22px; box-shadow: var(--shadow-emphasize); }
+.sol.featured .k { font-size: 14px; }
+.sol.featured h3 { font-size: 20px; margin: 6px 0 8px; }
+.sol.featured p { font-size: 14.5px; color: var(--fg-neutral); }
 .sol-note { margin: 14px 0 0; font-size: 13px; color: var(--fg-alternative); }
 
 .sec.alt { background: var(--bg-alternative); border-top: 1px solid var(--line-subtle); border-bottom: 1px solid var(--line-subtle); }

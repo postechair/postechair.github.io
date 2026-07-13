@@ -13,8 +13,7 @@ const NEWS = [
 
 /** 교내망 전용 솔루션 — 공개 페이지에는 이름·설명만 (내부 링크·포트 게재 금지 원칙) */
 const SOLUTIONS = [
-  { k: "AIR 포털", t: "센터 프로젝트 허브", d: "AIR센터의 진행 프로젝트·서비스 전체를 한눈에 보는 포털입니다." },
-  { k: "데이터 포털", t: "IR · KPI · 데이터 카탈로그", d: "대학 KPI 정의서, 데이터 연동맵, 기관연구(IR) 분석을 제공합니다." },
+  { k: "데이터 포털", t: "IR · KPI · 데이터 카탈로그", d: "대학 KPI 정의서, 데이터 연동맵, 기관연구(IR) 분석을 제공합니다.", featured: true },
   { k: "교육지원 플랫폼", t: "학생 성장 전주기 분석", d: "입학→재학→성장→졸업 전주기 학생 분석·상담·분반 지원 플랫폼입니다." },
   { k: "WG 스튜디오", t: "워킹그룹 협업·실습", d: "AI 교육 워킹그룹의 협업·실습 자료·즉석 설문·학습 진단 공간입니다." },
   { k: "Connect 챗봇", t: "RAG 상담 위젯", d: "문서 기반 RAG 답변과 담당자 핸드오프를 제공하는 상담 위젯입니다." },
@@ -82,7 +81,7 @@ export default function Home() {
             </div>
             <div className="sols">
               {SOLUTIONS.map((s) => (
-                <div className="sol" key={s.k}>
+                <div className={"sol" + (s.featured ? " featured" : "")} key={s.k}>
                   <div className="k">{s.k}</div>
                   <h3>{s.t}</h3>
                   <p>{s.d}</p>
