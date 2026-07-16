@@ -118,6 +118,7 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
 .steps li::before { content: counter(step); position: absolute; left: 0; top: 2px; width: 24px; height: 24px; border-radius: 50%; background: var(--primary); color: #fff; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
 .jd p.workcond { margin: 14px 0 0; font-size: 13.5px; color: var(--fg-alternative); }
 .jd p.stepnote { margin: 12px 0 0; font-size: 13px; color: var(--fg-alternative); }
+.jd p.applyref { margin: 14px 0 0; font-size: 14.5px; font-weight: 600; }
 
 @media (max-width: 640px) {
   .hero .wrap { padding: 48px 16px 44px; }

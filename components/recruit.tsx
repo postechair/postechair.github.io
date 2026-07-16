@@ -92,6 +92,7 @@ export function SelectionProcessSection() {
             </ul>
           </div>
         </div>
+        <p className="applyref"><a href="https://postech.recruiter.co.kr/" target="_blank" rel="noopener">https://postech.recruiter.co.kr/</a>를 참고하여 지원해주시기 바랍니다.</p>
       </div>
     </section>
   );
