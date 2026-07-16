@@ -79,7 +79,7 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
 /* ---- 채용(/recruit) 페이지 ---- */
 .topbar .tb-links { margin-left: auto; display: flex; gap: 18px; font-size: 13.5px; font-weight: 700; }
 .hero-eyebrow { margin: 0 0 14px; font-size: 13px; font-weight: 700; letter-spacing: .14em; opacity: .85; }
-.jd p { margin: 0 0 14px; font-size: 15.5px; line-height: 1.75; color: var(--fg-neutral); max-width: 76ch; }
+.jd p { margin: 0 0 14px; font-size: 15.5px; line-height: 1.75; color: var(--fg-neutral); }
 .jd p:last-child { margin-bottom: 0; }
 /* 센터 소개 매니페스토형 인트로 — 가운데 정렬, 문장 단위 줄바꿈 */
 .intro { text-align: center; margin: 0 auto; padding: 6px 0 10px; }
