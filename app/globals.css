@@ -81,6 +81,7 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
 .hero-eyebrow { margin: 0 0 14px; font-size: 13px; font-weight: 700; letter-spacing: .14em; opacity: .9; }
 /* .jd p 본문색이 히어로 텍스트를 덮지 않도록 — 그라디언트 위는 항상 흰색 */
 .hero .hero-eyebrow, .hero .hero-sub { color: #fff; }
+.hero .h1-note { font-size: 17px; font-weight: 600; letter-spacing: 0; opacity: .92; white-space: nowrap; }
 .jd p { margin: 0 0 14px; font-size: 15.5px; line-height: 1.75; color: var(--fg-neutral); }
 .jd p:last-child { margin-bottom: 0; }
 /* 센터 소개 매니페스토형 인트로 — 가운데 정렬, 문장 단위 줄바꿈 */

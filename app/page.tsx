@@ -44,7 +44,7 @@ export default function Home() {
             <p className="sec-intro">AI-Native University 전환을 함께 만들 동료를 찾습니다.</p>
             <div className="cards">
               <a className="card" href="/recruit/platform-lead/">
-                <span className="card-t">AI 플랫폼 리드 엔지니어</span>
+                <span className="card-t">AI 플랫폼 리드 엔지니어(2026.07.17~, 채용 완료시 마감)</span>
                 <span className="card-d">AI Platform Lead Engineer — 센터의 기술 기반 전체(LLM 게이트웨이 · 자체 모델 서빙 · 공용 RAG 스택 · 개발 표준 · 거버넌스 정책)를 설계·구축·운영할 플랫폼 리드</span>
                 <span className="card-go">Job Description 보기 →</span>
               </a>
