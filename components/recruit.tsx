@@ -84,17 +84,17 @@ export function SelectionProcessSection() {
             <p className="stepnote">※ 필요시 전형 단계가 추가될 수 있음</p>
           </div>
           <div className="req">
-            <h3>제출 서류</h3>
+            <h3>제출 서류 <span className="en">자유양식으로서 다음의 자료들을 자유롭게 포함</span></h3>
             <ul className="duties">
-              <li>이력서 / 경력기술서</li>
-              <li><b>자기소개서(필수)</b>: 해결한 실제 문제와 본인의 역할 중심으로 기술</li>
-              <li>포트폴리오 또는 작업물 (선택)</li>
+              <li>이력서(경력 포함)</li>
+              <li>자기소개서(해결한 실제 문제, 본인의 주요 역할 중심)</li>
+              <li>포트폴리오 또는 작업산출물</li>
             </ul>
           </div>
         </div>
         <div className="callout">
-          <p>POSTECH 공식 채용 포털에 <b>입사 지원서</b>를 작성해주시기 바랍니다.</p>
-          <a className="applybtn" href="https://postech.recruiter.co.kr" target="_blank" rel="noopener">입사 지원서 작성하기 — postech.recruiter.co.kr ↗</a>
+          <p>지원 방법 : 제출 서류를 <b>zip 파일로 압축</b>하여 채용담당자(oseam@postech.ac.kr)로 송부</p>
+          <a className="applybtn" href="mailto:oseam@postech.ac.kr">채용담당자에게 송부 — oseam@postech.ac.kr</a>
         </div>
       </div>
     </section>
