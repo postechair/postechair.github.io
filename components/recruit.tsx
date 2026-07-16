@@ -57,7 +57,7 @@ export function ApplyContactBody() {
     <>
       <div className="callout">
         <p>지원 방법과 전형 일정 등 상세 내용은 이메일로 문의해 주시기 바랍니다.</p>
-        <a className="applybtn" href="mailto:postech-air@postech.ac.kr">postech-air@postech.ac.kr로 문의하기</a>
+        <a className="applybtn" href="mailto:postech-air@postech.ac.kr">E : postech-air@postech.ac.kr / T : 054-279-3501</a>
       </div>
       <p className="workcond">근무지 포항공과대학교 (경북 포항) · 소속 기획처 AIR센터 · 고용형태·보수는 본교 규정에 따름 (세부 협의)</p>
     </>
