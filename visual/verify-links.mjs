@@ -13,7 +13,6 @@ const REQUIRED = [
   ["문의 mailto", "postech-air@postech.ac.kr"],
   ["공식 홈페이지", "https://postech.ac.kr"],
   ["채용 카드 — 플랫폼 리드", 'href="/recruit/platform-lead/"'],
-  ["채용 카드 — AX 엔지니어", 'href="/recruit/ax-engineer/"'],
   ["AIR센터 소개(대학의 OS)", "우리는 대학의 OS를 바꾸고 있습니다"],
   ["채용 지원·문의 통합", "채용과 관련한 상세 내용은 POSTECH AIR센터 이메일 또는 전화로"],
   ["채용 앵커", 'id="recruit"'],
@@ -50,6 +49,14 @@ for (const [name, rel, needles] of SUBPAGES) {
   const missing = needles.filter((n) => !h.includes(n));
   console.log(`${missing.length === 0 ? "✅" : "❌"} ${name}${missing.length ? `: 누락 ${missing.join(", ")}` : ""}`);
   if (missing.length) fail = 1;
+}
+
+/* 홈 AX 엔지니어 카드 숨김 상태 확인 (2026-07-16 오너 지시 — 상세 페이지는 유지) */
+if (html.includes('href="/recruit/ax-engineer/"')) {
+  console.log("❌ 홈에 AX 엔지니어 카드가 노출됨 (숨김 지시 위반)");
+  fail = 1;
+} else {
+  console.log("✅ 홈 AX 엔지니어 카드 숨김 유지");
 }
 
 /* 대외 비공개 내용 유출 차단 — 전체 HTML에 채용 운영 메모(JD 부록) 문구가 없어야 함 */

@@ -48,11 +48,13 @@ export default function Home() {
                 <span className="card-d">AI Platform Lead Engineer — 센터의 기술 기반 전체(LLM 게이트웨이 · 자체 모델 서빙 · 공용 RAG 스택 · 개발 표준 · 거버넌스 정책)를 설계·구축·운영할 플랫폼 리드</span>
                 <span className="card-go">Job Description 보기 →</span>
               </a>
+              {/* AX 엔지니어 카드 — 2026-07-16 오너 지시로 임시 숨김 (상세 페이지 /recruit/ax-engineer/ 는 유지)
               <a className="card" href="/recruit/ax-engineer/">
                 <span className="card-t">AX 엔지니어</span>
                 <span className="card-d">AX Engineer — 행정 현장에 임베드되어 문제 발굴부터 AI 솔루션 설계·개발·배포·정착까지 end-to-end로 책임지는 풀스택 엔지니어</span>
                 <span className="card-go">Job Description 보기 →</span>
               </a>
+              */}
             </div>
             <ApplyContactBody />
           </div>
