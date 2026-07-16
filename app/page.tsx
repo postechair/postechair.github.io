@@ -35,7 +35,7 @@ export default function Home() {
         </section>
 
         <CenterIntroSection heading="AIR센터">
-          <a className="more" href="https://postech.ac.kr" target="_blank" rel="noopener">postech.ac.kr ↗</a>
+          <a className="more" href="https://postech.ac.kr" target="_blank" rel="noopener">POSTECH에 대해 알아보기 ↗</a>
         </CenterIntroSection>
 
         <section className="sec alt jd" id="recruit">

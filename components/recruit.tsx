@@ -35,15 +35,15 @@ export function CenterIntroSection({ alt = false, heading = "센터 소개", chi
       <div className="wrap">
         <h2 className="sech">{heading}</h2>
         <h3 className="jd-h">우리는 대학의 OS를 바꾸고 있습니다</h3>
-        <p>POSTECH은 <b>대학의 체질 자체를 바꾸는 대전환</b>으로 나아가기 위해 2026년 3월 <b>AIR센터(Center for AI &amp; Institutional Research)를 신설</b>하였습니다.</p>
-        <p>우리가 그리는 것은 <b>AI-Native University</b> — <em>지식과 데이터가 스스로 흐르는 대학</em>입니다. 단순하고 반복적인 업무는 AI에 맡기고, 구성원은 AI와의 협업을 통해 창의적인 일에 집중합니다. <b>가장 사람다운 일을 하는 대학</b>, 그 변화를 지금 만들어 가고 있습니다.</p>
+        <p className="fullw">POSTECH은 <b>대학의 체질 자체를 바꾸는 대전환</b>으로 나아가기 위해 2026년 3월 <b>AIR센터(Center for AI &amp; Institutional Research)를 신설</b>하였습니다.</p>
+        <p className="fullw">우리가 그리는 것은 <b>AI-Native University</b> — <em>지식과 데이터가 스스로 흐르는 대학</em>입니다.<br />단순하고 반복적인 업무는 AI에 맡기고, 구성원은 AI와의 협업을 통해 창의적인 일에 집중합니다.<br /><b>가장 사람다운 일을 하는 대학</b>, 그 변화를 지금 만들어 가고 있습니다.</p>
 
         <h4 className="jd-subh">이미 하고 있는 일</h4>
         <div className="doing">
           <div className="do"><h5>AI Platform</h5><p>폐쇄망 환경에서 민감한 대학 데이터를 보호하며 현업의 AX 리더와 AX 엔지니어가 통제된 환경에서 효율적으로 AI Agent 기반 업무로 전환할 수 있게 지원하는 AI 플랫폼을 개발하고 있습니다. 외부 의존성을 최소화해 <b>&ldquo;내부에 자산으로 쌓이고, 필요하면 우리 손으로 언제든 바꿀 수 있는 자율성&rdquo;</b>을 확보하는 것이 방향입니다.</p></div>
           <div className="do"><h5>제도적 기억의 조직화</h5><p>축적된 내부 데이터를 로컬 AI로 분석하고 KPI와 매칭. 직관과 기억에 기대던 의사결정을 근거와 이력에 기반한 의사결정으로 전환하고 있습니다.</p></div>
-          <div className="do"><h5>부서별 맞춤 솔루션</h5><p>주요 부서의 <b>내부 인력이 부서의 니즈에 맞게 공동 파트너로 직접 개발</b>하는 방식입니다.</p></div>
-          <div className="do"><h5>조직문화 전환</h5><p>학내 행정부서가 참여하는 자율학습형 워킹그룹 운영과 AX leader 양성으로 <em>&ldquo;내 업무는 내가 바꿀 수 있다&rdquo;</em>는 자율성을 기르는 일입니다.</p></div>
+          <div className="do"><h5>부서별 맞춤 솔루션 개발 및 운영 지원</h5><p>주요 부서의 <b>내부 인력이 부서의 니즈에 맞게 공동 파트너로 직접 개발</b>하는 방식입니다.</p></div>
+          <div className="do"><h5>조직문화 전환 (AX 캠페인 활동)</h5><p>학내 행정부서가 참여하는 자율학습형 워킹그룹 운영과 AX leader 양성으로 <em>&ldquo;내 업무는 내가 바꿀 수 있다&rdquo;</em>는 자율성을 기르는 일입니다.</p></div>
         </div>
         {children}
       </div>
