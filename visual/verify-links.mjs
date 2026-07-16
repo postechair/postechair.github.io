@@ -15,7 +15,7 @@ const REQUIRED = [
   ["채용 카드 — 플랫폼 리드", 'href="/recruit/platform-lead/"'],
   ["채용 카드 — AX 엔지니어", 'href="/recruit/ax-engineer/"'],
   ["AIR센터 소개(대학의 OS)", "우리는 대학의 OS를 바꾸고 있습니다"],
-  ["채용 지원·문의 통합", "지원 방법과 전형 일정 등 상세 내용은 이메일로"],
+  ["채용 지원·문의 통합", "채용과 관련한 상세 내용은 POSTECH AIR센터 이메일 또는 전화로"],
   ["채용 앵커", 'id="recruit"'],
 ];
 

@@ -34,9 +34,12 @@ export function CenterIntroSection({ alt = false, heading = "센터 소개", chi
     <section className={"sec jd" + (alt ? " alt" : "")}>
       <div className="wrap">
         <h2 className="sech">{heading}</h2>
-        <h3 className="jd-h">우리는 대학의 OS를 바꾸고 있습니다</h3>
-        <p className="fullw">POSTECH은 <b>대학의 체질 자체를 바꾸는 대전환</b>으로 나아가기 위해 2026년 3월 <b>AIR센터(Center for AI &amp; Institutional Research)를 신설</b>하였습니다.</p>
-        <p className="fullw">우리가 그리는 것은 <b>AI-Native University</b> — <em>지식과 데이터가 스스로 흐르는 대학</em>입니다.<br />단순하고 반복적인 업무는 AI에 맡기고, 구성원은 AI와의 협업을 통해 창의적인 일에 집중합니다.<br /><b>가장 사람다운 일을 하는 대학</b>, 그 변화를 지금 만들어 가고 있습니다.</p>
+        <div className="intro">
+          <h3 className="jd-h">우리는 대학의 OS를 바꾸고 있습니다</h3>
+          <p className="lead">POSTECH은 <b>대학의 체질 자체를 바꾸는 대전환</b>으로 나아가기 위해 2026년 3월 <b>AIR센터(Center for AI &amp; Institutional Research)를 신설</b>하였습니다.</p>
+          <p className="vision">우리가 그리는 것은 <b>AI-Native University</b> — <em>지식과 데이터가 스스로 흐르는 대학</em>입니다.</p>
+          <p className="follow">단순하고 반복적인 업무는 AI에 맡기고, 구성원은 AI와의 협업을 통해 창의적인 일에 집중합니다.<br /><b>가장 사람다운 일을 하는 대학</b>, 그 변화를 지금 만들어 가고 있습니다.</p>
+        </div>
 
         <h4 className="jd-subh">이미 하고 있는 일</h4>
         <div className="doing">
@@ -56,7 +59,7 @@ export function ApplyContactBody() {
   return (
     <>
       <div className="callout">
-        <p>지원 방법과 전형 일정 등 상세 내용은 이메일로 문의해 주시기 바랍니다.</p>
+        <p>채용과 관련한 상세 내용은 POSTECH AIR센터 이메일 또는 전화로 문의 주시기 바랍니다.</p>
         <a className="applybtn" href="mailto:postech-air@postech.ac.kr">E : postech-air@postech.ac.kr / T : 054-279-3501</a>
       </div>
       <p className="workcond">근무지 포항공과대학교 (경북 포항) · 소속 기획처 AIR센터 · 고용형태·보수는 본교 규정에 따름 (세부 협의)</p>

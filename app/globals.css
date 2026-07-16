@@ -29,7 +29,7 @@ a:hover { color: var(--primary-strong); }
 .sech::before { content: ""; width: 4px; height: 15px; border-radius: 2px; background: var(--primary); display: block; }
 
 /* 프로그램 카드 그리드 (확장 구조 — 카드 추가만으로 확장) */
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
 .card {
   display: flex;
   flex-direction: column;
@@ -81,7 +81,14 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
 .hero-eyebrow { margin: 0 0 14px; font-size: 13px; font-weight: 700; letter-spacing: .14em; opacity: .85; }
 .jd p { margin: 0 0 14px; font-size: 15.5px; line-height: 1.75; color: var(--fg-neutral); max-width: 76ch; }
 .jd p:last-child { margin-bottom: 0; }
-.jd p.fullw { max-width: none; }
+/* 센터 소개 매니페스토형 인트로 — 가운데 정렬, 문장 단위 줄바꿈 */
+.intro { text-align: center; margin: 0 auto; padding: 6px 0 10px; }
+.intro p { max-width: none; }
+.intro .jd-h { font-size: 28px; margin: 4px 0 16px; }
+.intro .lead { margin: 0 0 18px; }
+.intro .vision { font-size: 20px; font-weight: 700; letter-spacing: -.01em; line-height: 1.6; color: var(--fg-strong); margin: 0 0 12px; }
+.intro .vision em { font-style: normal; color: var(--primary); }
+.intro .follow { margin: 0; line-height: 1.9; }
 .jd b { color: var(--fg-strong); }
 .jd-h { margin: 0 0 14px; font-size: 22px; font-weight: 800; letter-spacing: -.01em; color: var(--fg-strong); }
 .jd-subh { margin: 28px 0 12px; font-size: 16px; font-weight: 800; color: var(--fg-strong); }
@@ -118,6 +125,8 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
   .sols { grid-template-columns: 1fr; }
   .doing { grid-template-columns: 1fr; }
   .req-grid { grid-template-columns: 1fr; }
+  .intro .jd-h { font-size: 22px; }
+  .intro .vision { font-size: 17.5px; }
   .nrow { flex-wrap: wrap; }
   .nrow .date { margin-left: 0; width: 100%; }
   .site-footer .wrap { flex-wrap: wrap; }
