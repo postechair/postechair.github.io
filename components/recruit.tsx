@@ -92,7 +92,10 @@ export function SelectionProcessSection() {
             </ul>
           </div>
         </div>
-        <p className="applyref">POSTECH 공식 채용 포털 (<a href="https://postech.recruiter.co.kr" target="_blank" rel="noopener">https://postech.recruiter.co.kr</a>)에 입사 지원서를 작성해주시기 바랍니다.</p>
+        <div className="callout">
+          <p>POSTECH 공식 채용 포털에 <b>입사 지원서</b>를 작성해주시기 바랍니다.</p>
+          <a className="applybtn" href="https://postech.recruiter.co.kr" target="_blank" rel="noopener">입사 지원서 작성하기 — postech.recruiter.co.kr ↗</a>
+        </div>
       </div>
     </section>
   );
