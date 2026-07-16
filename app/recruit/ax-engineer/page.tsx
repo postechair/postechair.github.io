@@ -79,7 +79,7 @@ export default function AxEngineer() {
 
             <h3 className="jd-subh">&ldquo;사내 FDE&rdquo; 모델</h3>
             <ul className="duties">
-              <li>FDE(Forward Deployed Engineer)는 Palantir에서 정립되고 최근 OpenAI·Anthropic·Salesforce 등 AI 기업이 폭발적으로 채용 중인 직군으로, <b>고객 조직에 임베드되어 현장 제약 안에서 솔루션을 끝까지 책임지는 엔지니어</b>를 의미합니다.</li>
+              <li>FDE(Forward Deployed Engineer)는 <b>고객 조직에 임베드되어 현장 제약 안에서 솔루션을 끝까지 책임지는 엔지니어</b>를 의미합니다.</li>
               <li>AIR센터는 외부 고객이 아니라 <b>학내 행정부서를 &ldquo;고객&rdquo;으로 하는 사내 FDE 모델</b>을 적용합니다. 상품 판매가 아닌, 현장에서 실제로 동작하는 솔루션의 <b>딜리버리 그 자체</b>가 직무의 본질입니다.</li>
             </ul>
 
