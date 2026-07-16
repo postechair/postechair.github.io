@@ -67,6 +67,36 @@ export function ApplyContactBody() {
   );
 }
 
+/** 전형 절차 · 제출 서류 — 두 공고 공통 (3단계 + 추가 가능 명시) */
+export function SelectionProcessSection() {
+  return (
+    <section className="sec">
+      <div className="wrap">
+        <h2 className="sech">전형 절차 · 제출 서류</h2>
+        <div className="req-grid">
+          <div className="req">
+            <h3>전형 절차</h3>
+            <ol className="steps">
+              <li>서류 전형</li>
+              <li>면접 및 실무과제·라이브 문제해결 평가</li>
+              <li>최종 전형 및 처우 협의</li>
+            </ol>
+            <p className="stepnote">※ 필요시 전형 단계가 추가될 수 있음</p>
+          </div>
+          <div className="req">
+            <h3>제출 서류</h3>
+            <ul className="duties">
+              <li>이력서 / 경력기술서</li>
+              <li><b>자기소개서(필수)</b>: 해결한 실제 문제와 본인의 역할 중심으로 기술</li>
+              <li>포트폴리오 또는 작업물 (선택)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /** 지원·문의 — 공용 마감 섹션 */
 export function ApplyContactSection({ alt = false }: { alt?: boolean }) {
   return (

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { RecruitTopbar, RecruitFooter, ApplyContactSection } from "@/components/recruit";
+import { RecruitTopbar, RecruitFooter, ApplyContactSection, SelectionProcessSection } from "@/components/recruit";
 
 export const metadata: Metadata = {
   title: "AX 엔지니어 채용 | POSTECH AIR",
@@ -46,16 +46,6 @@ const NICE = [
   <>행정·공공·대학 도메인 또는 규제·보안 제약 환경에 대한 이해</>,
 ];
 
-const TRAITS = [
-  ["풀스택 제너럴리스트", "특정 영역 스페셜리스트보다 폭넓게 직접 만드는 사람."],
-  ["도메인 호기심", "“이 행정부서가 실제로 어떻게 일하는가”에 진짜로 흥미를 느낌."],
-  ["모호함 내성", "잘 정의된 스펙을 기다리지 않음."],
-  ["제품화 반사신경", "같은 일을 두 번 하면 자동화·일반화를 떠올림. (소규모 팀 생존의 결정 요인)"],
-  ["소통력", "비기술 행정직원과 신뢰를 쌓고 협업."],
-  ["오너십", "코드가 아니라 성과(현장 채택)를 책임짐."],
-  ["AI-native", "LLM/RAG/agent 패턴에 익숙하고 eval 기반으로 사고."],
-] as const;
-
 export default function AxEngineer() {
   return (
     <>
@@ -72,10 +62,10 @@ export default function AxEngineer() {
         <section className="sec alt">
           <div className="wrap">
             <h2 className="sech">포지션 개요</h2>
+            <p>AIR센터는 학내 행정업무를 AI 기반으로 전환(AX)하는 조직으로, <b>현업에 들어가 변화를 만드는 AX 엔지니어 파트</b>와 <b>그 변화를 뒷받침하면서 동시에 통제하는 AI 플랫폼 파트</b>의 2파트 체계로 운영됩니다.<br />AX 엔지니어는 이 중 <b>현장 배포(forward)의 실행 주체</b>이며, 센터의 <b>현장 배포(딜리버리) 처리량을 확장</b>하기 위한 핵심 포지션입니다.<br />반복되는 작업을 재사용 자산으로 승격(제품화)하는 책임을 함께 가집니다.</p>
             <div className="callout">
               <p><b>행정 현장에 직접 들어가(임베드) 현업의 문제를 발굴·정의하고, AI 기반 솔루션을 설계·개발·배포·정착까지 단독으로 책임지는 풀스택 엔지니어</b>입니다.</p>
             </div>
-            <p style={{ marginTop: 14 }}>AIR센터는 학내 행정업무를 AI 기반으로 전환(AX)하는 조직으로, <b>현업에 들어가 변화를 만드는 AX 엔지니어 파트</b>와 <b>그 변화를 뒷받침하면서 동시에 통제하는 AI 플랫폼 파트</b>의 2파트 체계로 운영됩니다.<br />AX 엔지니어는 이 중 <b>현장 배포(forward)의 실행 주체</b>이며, 센터의 <b>현장 배포(딜리버리) 처리량을 확장</b>하기 위한 핵심 포지션입니다.<br />반복되는 작업을 재사용 자산으로 승격(제품화)하는 책임을 함께 가집니다.</p>
 
             <h3 className="jd-subh">&ldquo;사내 FDE&rdquo; 모델</h3>
             <ul className="duties">
@@ -131,47 +121,10 @@ export default function AxEngineer() {
                 </ul>
               </div>
             </div>
-
-            <h4 className="jd-subh">핵심 인재상 · 역량</h4>
-            <div className="doing">
-              {TRAITS.map(([t, d]) => (
-                <div className="do" key={t}><h5>{t}</h5><p>{d}</p></div>
-              ))}
-            </div>
-
-            <h4 className="jd-subh">(참고) 이런 분께는 맞지 않습니다</h4>
-            <ul className="duties">
-              <li>사용자와 대화하지 않으려는 순수 연구형 / 백엔드 스페셜리스트</li>
-              <li>직접 빌드하지 못하는 순수 기획·조율형 (센터가 이미 보유한 역할과 중복)</li>
-              <li>명확한 요구사항이 떨어져야만 움직이는 사람</li>
-            </ul>
           </div>
         </section>
 
-        <section className="sec">
-          <div className="wrap">
-            <h2 className="sech">전형 절차 · 제출 서류</h2>
-            <div className="req-grid">
-              <div className="req">
-                <h3>전형 절차</h3>
-                <ol className="steps">
-                  <li>서류 전형</li>
-                  <li>1차 — <b>실무 과제 또는 라이브 문제해결</b> (실전형 평가)</li>
-                  <li>2차 — 면접 (도메인 적합성, 협업·소통, 모호성 대응)</li>
-                  <li>최종 전형 및 처우 협의</li>
-                </ol>
-              </div>
-              <div className="req">
-                <h3>제출 서류</h3>
-                <ul className="duties">
-                  <li>이력서 / 경력기술서</li>
-                  <li><b>포트폴리오 또는 GitHub 등 작업물</b> (필수에 준함)</li>
-                  <li>자기소개서(선택): 해결한 실제 문제와 본인의 역할 중심으로 기술</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+        <SelectionProcessSection />
 
         <ApplyContactSection alt />
       </main>
