@@ -14,6 +14,9 @@ const REQUIRED = [
   ["공식 홈페이지", "https://postech.ac.kr"],
   ["채용 카드 — 플랫폼 리드", 'href="/recruit/platform-lead/"'],
   ["채용 카드 — AX 엔지니어", 'href="/recruit/ax-engineer/"'],
+  ["AIR센터 소개(대학의 OS)", "우리는 대학의 OS를 바꾸고 있습니다"],
+  ["채용 지원·문의 통합", "지원 방법과 전형 일정 등 상세 내용은 이메일로"],
+  ["채용 앵커", 'id="recruit"'],
 ];
 
 let fail = 0;
@@ -23,12 +26,18 @@ for (const [name, needle] of REQUIRED) {
   if (!ok) fail = 1;
 }
 
-/* 채용 페이지 — 존재 + 핵심 문구/링크 */
+/* 채용 페이지 — 존재 + 핵심 문구/링크 (허브는 제거됨 — 홈 #recruit 가 허브) */
 const SUBPAGES = [
-  ["recruit 허브", "recruit/index.html", ['href="/recruit/platform-lead/"', 'href="/recruit/ax-engineer/"', "mailto:postech-air@postech.ac.kr"]],
-  ["platform-lead", "recruit/platform-lead/index.html", ["AI 플랫폼 리드 엔지니어", "가속과 통제를 동시에 하는 일", 'href="/recruit/"', "mailto:postech-air@postech.ac.kr", "근무지 포항공과대학교"]],
-  ["ax-engineer", "recruit/ax-engineer/index.html", ["AX 엔지니어", "사내 FDE", 'href="/recruit/"', "mailto:postech-air@postech.ac.kr", "포트폴리오 또는 GitHub"]],
+  ["platform-lead", "recruit/platform-lead/index.html", ["AI 플랫폼 리드 엔지니어", "가속과 통제를 동시에 하는 일", 'href="/#recruit"', "mailto:postech-air@postech.ac.kr", "근무지 포항공과대학교"]],
+  ["ax-engineer", "recruit/ax-engineer/index.html", ["AX 엔지니어", "사내 FDE", 'href="/#recruit"', "mailto:postech-air@postech.ac.kr", "포트폴리오 또는 GitHub"]],
 ];
+try {
+  readFileSync(join(docs, "recruit/index.html"), "utf8");
+  console.log("❌ /recruit/ 허브가 여전히 존재 (제거 지시됨)");
+  fail = 1;
+} catch {
+  console.log("✅ /recruit/ 허브 제거됨");
+}
 for (const [name, rel, needles] of SUBPAGES) {
   let h;
   try {

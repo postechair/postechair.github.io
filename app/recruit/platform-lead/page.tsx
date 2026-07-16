@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { RecruitTopbar, RecruitFooter, CenterIntroSection, ApplyContactSection } from "@/components/recruit";
+import { RecruitTopbar, RecruitFooter, ApplyContactSection } from "@/components/recruit";
 
 export const metadata: Metadata = {
   title: "AI 플랫폼 리드 엔지니어 채용 | POSTECH AIR",
@@ -66,8 +66,6 @@ export default function PlatformLead() {
             <p className="hero-sub">AI Platform Lead Engineer</p>
           </div>
         </section>
-
-        <CenterIntroSection />
 
         <section className="sec alt">
           <div className="wrap">

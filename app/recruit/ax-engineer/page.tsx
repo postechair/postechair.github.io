@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { RecruitTopbar, RecruitFooter, CenterIntroSection, ApplyContactSection } from "@/components/recruit";
+import { RecruitTopbar, RecruitFooter, ApplyContactSection } from "@/components/recruit";
 
 export const metadata: Metadata = {
   title: "AX 엔지니어 채용 | POSTECH AIR",
@@ -68,8 +68,6 @@ export default function AxEngineer() {
             <p className="hero-sub">AX Engineer</p>
           </div>
         </section>
-
-        <CenterIntroSection />
 
         <section className="sec alt">
           <div className="wrap">

@@ -1,4 +1,5 @@
 import wordmark from "@/assets/postech-wordmark-black.png";
+import { CenterIntroSection, ApplyContactBody } from "@/components/recruit";
 
 /** 교내망 전용 솔루션 — 공개 페이지에는 이름·설명만 (내부 링크·포트 게재 금지 원칙) */
 const SOLUTIONS = [
@@ -33,6 +34,30 @@ export default function Home() {
           </div>
         </section>
 
+        <CenterIntroSection heading="AIR센터">
+          <a className="more" href="https://postech.ac.kr" target="_blank" rel="noopener">postech.ac.kr ↗</a>
+        </CenterIntroSection>
+
+        <section className="sec alt jd" id="recruit">
+          <div className="wrap">
+            <h2 className="sech">채용</h2>
+            <p className="sec-intro">AI-Native University 전환을 함께 만들 동료를 찾습니다.</p>
+            <div className="cards">
+              <a className="card" href="/recruit/platform-lead/">
+                <span className="card-t">AI 플랫폼 리드 엔지니어</span>
+                <span className="card-d">AI Platform Lead Engineer — 센터의 기술 기반 전체(LLM 게이트웨이 · 자체 모델 서빙 · 공용 RAG 스택 · 개발 표준 · 거버넌스 정책)를 설계·구축·운영할 플랫폼 리드</span>
+                <span className="card-go">공고 보기 →</span>
+              </a>
+              <a className="card" href="/recruit/ax-engineer/">
+                <span className="card-t">AX 엔지니어</span>
+                <span className="card-d">AX Engineer — 행정 현장에 임베드되어 문제 발굴부터 AI 솔루션 설계·개발·배포·정착까지 end-to-end로 책임지는 풀스택 엔지니어</span>
+                <span className="card-go">공고 보기 →</span>
+              </a>
+            </div>
+            <ApplyContactBody />
+          </div>
+        </section>
+
         <section className="sec">
           <div className="wrap">
             <h2 className="sech">진행 중인 프로그램</h2>
@@ -49,11 +74,11 @@ export default function Home() {
 
         <section className="sec alt">
           <div className="wrap">
-            <h2 className="sech">AIR 플랫폼</h2>
+            <h2 className="sech">AIR&rsquo;s WORKS</h2>
             <div className="aaep">
               <h3>PAAIP (POSTECH Agentic AI Institute Platform)</h3>
               <span className="pill-building">구축 중</span>
-              <p>PAAIP는 AIR센터가 구축 중인 <b>전사 에이전틱 AI 플랫폼</b>입니다. AI 에이전트가 대학 업무를 수행할 때 필요한 <b>거버넌스 통제면</b>(행동 정책 통제 · 행 수준 데이터 권한 · 변조 불가 감사 추적)을 기반으로, 구성원 누구나 안전하게 업무 AI를 활용할 수 있는 환경을 목표로 합니다. 세부 내용은 구축 진행에 따라 단계적으로 공개됩니다.</p>
+              <p>PAAIP는 AIR센터가 구축 중인 <b>전사 에이전틱 AI 플랫폼</b>입니다. AI 에이전트가 대학 업무를 수행할 때 필요한 <b>거버넌스 통제면</b>(행동 정책 통제 · 행 수준 데이터 권한 · 변조 불가 감사 추적)을 기반으로, 구성원 누구나 안전하게 업무 AI를 활용할 수 있는 환경을 목표로 합니다.</p>
             </div>
             <div className="sols">
               {SOLUTIONS.map((s) => (
@@ -65,33 +90,6 @@ export default function Home() {
               ))}
             </div>
             <p className="sol-note">위 업무 솔루션은 내부망(교내)에서만 접속되며, 서비스별 접근 권한은 담당 부서 협의로 부여됩니다.</p>
-          </div>
-        </section>
-
-        <section className="sec">
-          <div className="wrap">
-            <h2 className="sech">채용</h2>
-            <p className="sec-intro">AI-Native University 전환을 함께 만들 동료를 찾습니다.</p>
-            <div className="cards">
-              <a className="card" href="/recruit/platform-lead/">
-                <span className="card-t">AI 플랫폼 리드 엔지니어</span>
-                <span className="card-d">AI Platform Lead Engineer — 센터의 기술 기반 전체(LLM 게이트웨이 · 자체 모델 서빙 · 공용 RAG 스택 · 개발 표준 · 거버넌스 정책)를 설계·구축·운영할 플랫폼 리드</span>
-                <span className="card-go">공고 보기 →</span>
-              </a>
-              <a className="card" href="/recruit/ax-engineer/">
-                <span className="card-t">AX 엔지니어</span>
-                <span className="card-d">AX Engineer — 행정 현장에 임베드되어 문제 발굴부터 AI 솔루션 설계·개발·배포·정착까지 end-to-end로 책임지는 풀스택 엔지니어</span>
-                <span className="card-go">공고 보기 →</span>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="sec alt about">
-          <div className="wrap">
-            <h2 className="sech">AIR센터</h2>
-            <p>AIR센터(Center for AI &amp; Institutional Research)는 POSTECH의 AI-Native University 전략을 추진하며, 데이터 기반 의사결정과 구성원의 AI 역량 강화를 지원합니다.</p>
-            <a className="more" href="https://postech.ac.kr" target="_blank" rel="noopener">postech.ac.kr ↗</a>
           </div>
         </section>
       </main>
