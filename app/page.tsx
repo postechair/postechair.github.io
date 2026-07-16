@@ -60,7 +60,7 @@ export default function Home() {
 
         <section className="sec">
           <div className="wrap">
-            <h2 className="sech">진행 중인 프로그램</h2>
+            <h2 className="sech">AX 캠페인 활동</h2>
             <p className="sec-intro">포스텍 구성원의 AI 전환(AX)을 돕는 교육·실습·챌린지 프로그램입니다.</p>
             <div className="cards">
               <a className="card" href="/event/">
