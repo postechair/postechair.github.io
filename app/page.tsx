@@ -1,5 +1,5 @@
 import wordmark from "@/assets/postech-wordmark-black.png";
-import { CenterIntroSection, ApplyContactBody } from "@/components/recruit";
+import { CenterIntroSection } from "@/components/recruit";
 
 /** 교내망 전용 솔루션 — 공개 페이지에는 이름·설명만 (내부 링크·포트 게재 금지 원칙) */
 const SOLUTIONS = [
@@ -56,7 +56,6 @@ export default function Home() {
               </a>
               */}
             </div>
-            <ApplyContactBody />
           </div>
         </section>
 
