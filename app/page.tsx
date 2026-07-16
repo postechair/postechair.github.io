@@ -68,7 +68,26 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="sec about">
+        <section className="sec">
+          <div className="wrap">
+            <h2 className="sech">채용</h2>
+            <p className="sec-intro">AI-Native University 전환을 함께 만들 동료를 찾습니다.</p>
+            <div className="cards">
+              <a className="card" href="/recruit/platform-lead/">
+                <span className="card-t">AI 플랫폼 리드 엔지니어</span>
+                <span className="card-d">AI Platform Lead Engineer — 센터의 기술 기반 전체(LLM 게이트웨이 · 자체 모델 서빙 · 공용 RAG 스택 · 개발 표준 · 거버넌스 정책)를 설계·구축·운영할 플랫폼 리드</span>
+                <span className="card-go">공고 보기 →</span>
+              </a>
+              <a className="card" href="/recruit/ax-engineer/">
+                <span className="card-t">AX 엔지니어</span>
+                <span className="card-d">AX Engineer — 행정 현장에 임베드되어 문제 발굴부터 AI 솔루션 설계·개발·배포·정착까지 end-to-end로 책임지는 풀스택 엔지니어</span>
+                <span className="card-go">공고 보기 →</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="sec alt about">
           <div className="wrap">
             <h2 className="sech">AIR센터</h2>
             <p>AIR센터(Center for AI &amp; Institutional Research)는 POSTECH의 AI-Native University 전략을 추진하며, 데이터 기반 의사결정과 구성원의 AI 역량 강화를 지원합니다.</p>

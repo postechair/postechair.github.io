@@ -27,6 +27,24 @@ for (const w of [390, 1600]) {
   }
   await p.close();
 }
+
+// 채용 페이지 3종: 로드 + 반응형 + 허브 카드 2링크
+for (const slug of ["recruit", "recruit/platform-lead", "recruit/ax-engineer"]) {
+  for (const w of [390, 1600]) {
+    const p = await browser.newPage({ viewport: { width: w, height: 900 } });
+    await p.goto(`http://127.0.0.1:${port}/${slug}/`, { waitUntil: "networkidle" });
+    const sw = await p.evaluate(() => document.documentElement.scrollWidth);
+    const h1 = await p.locator("h1").first().textContent();
+    results.push([`/${slug} (${w}px) h1="${h1?.trim()}" 오버플로 없음(${sw})`, sw <= w && !!h1?.trim()]);
+    if (slug === "recruit" && w === 1600) {
+      const n = await p.locator('a.card[href^="/recruit/"]').count();
+      results.push([`/recruit 허브 포지션 카드 ${n}개`, n === 2]);
+      await p.evaluate(() => document.fonts.ready);
+      await p.screenshot({ path: `${out}/recruit-hub-1600.png`, fullPage: true });
+    }
+    await p.close();
+  }
+}
 await browser.close();
 
 let fail = 0;
