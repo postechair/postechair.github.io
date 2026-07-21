@@ -22,7 +22,7 @@ for (const w of [390, 1600]) {
   if (w === 1600) {
     // /event 카드는 href assert 한정 (로컬 서빙엔 /event 미존재 — 설계문서)
     results.push(["/event 카드 존재", (await p.locator('a.card[href="/event/"]').count()) === 1]);
-    results.push(["홈 채용 카드 1개 (AX 숨김)", (await p.locator('a.card[href^="/recruit/"]').count()) === 1]);
+    results.push(["홈 채용 카드 2개", (await p.locator('a.card[href^="/recruit/"]').count()) === 2]);
     results.push(["채용 앵커 #recruit 존재", (await p.locator("#recruit").count()) === 1]);
     results.push(["폰트 로드", await p.evaluate(() => document.fonts.check('16px "Pretendard"'))]);
   }

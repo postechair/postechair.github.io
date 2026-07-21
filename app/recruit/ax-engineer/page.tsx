@@ -124,7 +124,7 @@ export default function AxEngineer() {
           </div>
         </section>
 
-        <SelectionProcessSection />
+        <SelectionProcessSection applyEmail="postech-air@postech.ac.kr" />
 
         <ApplyContactSection alt />
       </main>

@@ -13,6 +13,7 @@ const REQUIRED = [
   ["문의 mailto", "postech-air@postech.ac.kr"],
   ["공식 홈페이지", "https://postech.ac.kr"],
   ["채용 카드 — 플랫폼 리드", 'href="/recruit/platform-lead/"'],
+  ["채용 카드 — AX 엔지니어", 'href="/recruit/ax-engineer/"'],
   ["AIR센터 소개(대학의 OS)", "우리는 대학의 OS를 바꾸고 있습니다"],
   ["채용 앵커", 'id="recruit"'],
 ];
@@ -27,7 +28,7 @@ for (const [name, needle] of REQUIRED) {
 /* 채용 페이지 — 존재 + 핵심 문구/링크 (허브는 제거됨 — 홈 #recruit 가 허브) */
 const SUBPAGES = [
   ["platform-lead", "recruit/platform-lead/index.html", ["AI 플랫폼 리드 엔지니어", "가속과 통제를 동시에 하는 일", 'href="/#recruit"', "mailto:postech-air@postech.ac.kr", "근무지 포항공과대학교", "면접 및 실무과제·라이브 문제해결 평가", "필요시 전형 단계가 추가될 수 있음", "mailto:oseam@postech.ac.kr"]],
-  ["ax-engineer", "recruit/ax-engineer/index.html", ["AX 엔지니어", "사내 FDE", 'href="/#recruit"', "mailto:postech-air@postech.ac.kr", "면접 및 실무과제·라이브 문제해결 평가", "자기소개서(해결한 실제 문제, 본인의 주요 역할 중심)", "포트폴리오 또는 작업산출물", "mailto:oseam@postech.ac.kr"]],
+  ["ax-engineer", "recruit/ax-engineer/index.html", ["AX 엔지니어", "사내 FDE", 'href="/#recruit"', "mailto:postech-air@postech.ac.kr", "면접 및 실무과제·라이브 문제해결 평가", "자기소개서(해결한 실제 문제, 본인의 주요 역할 중심)", "포트폴리오 또는 작업산출물", "채용담당자에게 송부"]],
 ];
 try {
   readFileSync(join(docs, "recruit/index.html"), "utf8");
@@ -50,12 +51,15 @@ for (const [name, rel, needles] of SUBPAGES) {
   if (missing.length) fail = 1;
 }
 
-/* 홈 AX 엔지니어 카드 숨김 상태 확인 (2026-07-16 오너 지시 — 상세 페이지는 유지) */
-if (html.includes('href="/recruit/ax-engineer/"')) {
-  console.log("❌ 홈에 AX 엔지니어 카드가 노출됨 (숨김 지시 위반)");
-  fail = 1;
-} else {
-  console.log("✅ 홈 AX 엔지니어 카드 숨김 유지");
+/* AX 엔지니어 지원 이메일은 postech-air (oseam 아님, 2026-07-17 오너 지시) */
+{
+  const axHtml = readFileSync(join(docs, "recruit/ax-engineer/index.html"), "utf8");
+  if (axHtml.includes("oseam")) {
+    console.log("❌ AX 엔지니어 페이지에 oseam 이메일 잔존 (postech-air 여야 함)");
+    fail = 1;
+  } else {
+    console.log("✅ AX 엔지니어 지원 이메일 = postech-air (oseam 없음)");
+  }
 }
 
 /* 대외 비공개 내용 유출 차단 — 전체 HTML에 채용 운영 메모(JD 부록) 문구가 없어야 함 */

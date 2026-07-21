@@ -67,8 +67,8 @@ export function ApplyContactBody() {
   );
 }
 
-/** 전형 절차 · 제출 서류 — 두 공고 공통 (3단계 + 추가 가능 명시) */
-export function SelectionProcessSection() {
+/** 전형 절차 · 제출 서류 — 두 공고 공통 (3단계 + 추가 가능 명시). 지원 이메일은 공고별로 다름 */
+export function SelectionProcessSection({ applyEmail = "oseam@postech.ac.kr" }: { applyEmail?: string }) {
   return (
     <section className="sec">
       <div className="wrap">
@@ -93,8 +93,8 @@ export function SelectionProcessSection() {
           </div>
         </div>
         <div className="callout">
-          <p>지원 방법 : 제출 서류를 <b>zip 파일로 압축</b>하여 채용담당자(oseam@postech.ac.kr)로 송부</p>
-          <a className="applybtn" href="mailto:oseam@postech.ac.kr">채용담당자에게 송부 — oseam@postech.ac.kr</a>
+          <p>지원 방법 : 제출 서류를 <b>zip 파일로 압축</b>하여 채용담당자({applyEmail})로 송부</p>
+          <a className="applybtn" href={`mailto:${applyEmail}`}>채용담당자에게 송부 — {applyEmail}</a>
         </div>
       </div>
     </section>
