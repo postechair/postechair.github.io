@@ -54,7 +54,7 @@ export default function AxEngineer() {
         <section className="hero">
           <div className="wrap">
             <p className="hero-eyebrow">AIR센터 채용</p>
-            <h1>AX 엔지니어</h1>
+            <h1>AX 엔지니어 <span className="h1-note">(2026.07.17~, 채용 완료시 마감)</span></h1>
             <p className="hero-sub">AX Engineer</p>
           </div>
         </section>

@@ -49,7 +49,7 @@ export default function Home() {
                 <span className="card-go">Job Description 보기 →</span>
               </a>
               <a className="card" href="/recruit/ax-engineer/">
-                <span className="card-t">AX 엔지니어</span>
+                <span className="card-t">AX 엔지니어(2026.07.17~, 채용 완료시 마감)</span>
                 <span className="card-d">AX Engineer — 행정 현장에 임베드되어 문제 발굴부터 AI 솔루션 설계·개발·배포·정착까지 end-to-end로 책임지는 풀스택 엔지니어</span>
                 <span className="card-go">Job Description 보기 →</span>
               </a>
