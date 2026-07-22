@@ -15,6 +15,7 @@ const REQUIRED = [
   ["채용 카드 — 플랫폼 리드", 'href="/recruit/platform-lead/"'],
   ["채용 카드 — AX 엔지니어", 'href="/recruit/ax-engineer/"'],
   ["AIR센터 소개(대학의 OS)", "우리는 대학의 OS를 바꾸고 있습니다"],
+  ["WG 사례집 링크", 'href="/event/working-group/2026/first/"'],
   ["채용 앵커", 'id="recruit"'],
 ];
 
