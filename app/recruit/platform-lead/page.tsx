@@ -62,7 +62,7 @@ export default function PlatformLead() {
         <section className="hero">
           <div className="wrap">
             <p className="hero-eyebrow">AIR센터 채용</p>
-            <h1>AI 플랫폼 리드 엔지니어 <span className="h1-note">(2026.07.17~, 채용 완료시 마감)</span></h1>
+            <h1>AI 플랫폼 리드 엔지니어 <span className="h1-note">(2026.07.17~, 8.6(목) 24:00 지원 마감)</span></h1>
             <p className="hero-sub">AI Platform Lead Engineer</p>
           </div>
         </section>
