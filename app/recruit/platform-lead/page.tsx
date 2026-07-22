@@ -128,7 +128,14 @@ export default function PlatformLead() {
           </div>
         </section>
 
-        <SelectionProcessSection />
+        <SelectionProcessSection
+          schedule={[
+            ["8.6(목) 24:00", "지원서 접수 마감"],
+            ["8.7(금)", <>서류심사 합격자 발표 <span className="snote">(개별 유선 통보)</span></>],
+            ["8.14(금) ~ 8.19(수) 중 1일", "면접전형"],
+            ["면접전형 다음날", <>최종 합격자 발표 <span className="snote">(개별 유선 통보)</span></>],
+          ]}
+        />
         <ApplyContactSection alt />
       </main>
       <RecruitFooter />

@@ -119,6 +119,15 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
 .steps li::before { content: counter(step); position: absolute; left: 0; top: 2px; width: 24px; height: 24px; border-radius: 50%; background: var(--primary); color: #fff; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
 .jd p.workcond { margin: 14px 0 0; font-size: 13.5px; color: var(--fg-alternative); }
 .jd p.stepnote { margin: 12px 0 0; font-size: 13px; color: var(--fg-alternative); }
+/* 채용 일정 타임라인 (공고별 상세) */
+.schedbox { border: 1px solid var(--line-subtle); border-top: 4px solid var(--primary); border-radius: 13px; background: var(--bg-elevated); box-shadow: var(--shadow-emphasize); padding: 20px 22px; margin-bottom: 14px; }
+.schedh { font-size: 16px; font-weight: 800; color: var(--fg-strong); margin-bottom: 16px; }
+.sched { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; counter-reset: sch; }
+.sched li { display: flex; align-items: baseline; gap: 14px; position: relative; padding-left: 34px; counter-increment: sch; }
+.sched li::before { content: counter(sch); position: absolute; left: 0; top: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--primary); color: #fff; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.sched .sd { flex: none; min-width: 210px; font-size: 15px; font-weight: 800; color: var(--primary); }
+.sched .st { font-size: 14.5px; color: var(--fg-neutral); line-height: 1.6; }
+.sched .snote { color: var(--fg-alternative); font-weight: 400; }
 .req-grid + .callout { margin-top: 14px; }
 
 @media (max-width: 640px) {
@@ -130,6 +139,8 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
   .sols { grid-template-columns: 1fr; }
   .doing { grid-template-columns: 1fr; }
   .req-grid { grid-template-columns: 1fr; }
+  .sched li { flex-direction: column; gap: 3px; }
+  .sched .sd { min-width: 0; }
   .intro .jd-h { font-size: 22px; }
   .intro .vision { font-size: 17.5px; }
   .nrow { flex-wrap: wrap; }

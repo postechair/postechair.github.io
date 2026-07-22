@@ -67,12 +67,28 @@ export function ApplyContactBody() {
   );
 }
 
-/** 전형 절차 · 제출 서류 — 두 공고 공통 (3단계 + 추가 가능 명시). 지원 이메일은 공고별로 다름 */
-export function SelectionProcessSection({ applyEmail = "oseam@postech.ac.kr" }: { applyEmail?: string }) {
+/** 전형 절차 · 제출 서류 — 두 공고 공통 (3단계 + 추가 가능 명시). 지원 이메일·상세 일정은 공고별로 다름 */
+export function SelectionProcessSection({
+  applyEmail = "oseam@postech.ac.kr",
+  schedule,
+}: {
+  applyEmail?: string;
+  schedule?: [string, React.ReactNode][];
+}) {
   return (
     <section className="sec">
       <div className="wrap">
         <h2 className="sech">전형 절차 · 제출 서류</h2>
+        {schedule && (
+          <div className="schedbox">
+            <div className="schedh">채용 일정</div>
+            <ol className="sched">
+              {schedule.map(([d, t], i) => (
+                <li key={i}><span className="sd">{d}</span><span className="st">{t}</span></li>
+              ))}
+            </ol>
+          </div>
+        )}
         <div className="req-grid">
           <div className="req">
             <h3>전형 절차</h3>
