@@ -68,8 +68,8 @@ export default function Home() {
                 <span className="card-go">바로가기 →</span>
               </a>
               <a className="card" href="/event/working-group/2026/first/">
-                <span className="card-t">WG 참여자 산출물 사례집</span>
-                <span className="card-d">2026 상반기 Working Group 참여자들이 스스로 개발한 산출물 사례 — 기술 스택·핵심 기능·작업 방식</span>
+                <span className="card-t">2026 상반기 WG 참여자 산출물 사례집</span>
+                <span className="card-d">Working Group 참여자들이 스스로 개발한 산출물 사례 — 기술 스택·핵심 기능·작업 방식</span>
                 <span className="card-go">사례집 보기 →</span>
               </a>
             </div>
