@@ -135,6 +135,7 @@ export default function PlatformLead() {
             ["8.14(금) ~ 8.19(수) 중 1일", "면접전형"],
             ["면접전형 다음날", <>최종 합격자 발표 <span className="snote">(개별 유선 통보)</span></>],
           ]}
+          detailsNotice={<>전형 절차 및 방법은 <b>7월 27일</b> 안내 예정입니다.</>}
         />
         <ApplyContactSection alt />
       </main>

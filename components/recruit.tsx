@@ -71,9 +71,12 @@ export function ApplyContactBody() {
 export function SelectionProcessSection({
   applyEmail = "oseam@postech.ac.kr",
   schedule,
+  detailsNotice,
 }: {
   applyEmail?: string;
   schedule?: [string, React.ReactNode][];
+  /** 주어지면 전형 절차·제출 서류·지원 방법 대신 이 안내 문구만 노출(공고별 미확정 시). 채용 일정은 그대로 유지 */
+  detailsNotice?: React.ReactNode;
 }) {
   return (
     <section className="sec">
@@ -89,29 +92,35 @@ export function SelectionProcessSection({
             </ol>
           </div>
         )}
-        <div className="req-grid">
-          <div className="req">
-            <h3>전형 절차</h3>
-            <ol className="steps">
-              <li>서류 전형</li>
-              <li>면접 및 실무과제·라이브 문제해결 평가</li>
-              <li>최종 전형 및 처우 협의</li>
-            </ol>
-            <p className="stepnote">※ 필요시 전형 단계가 추가될 수 있음</p>
-          </div>
-          <div className="req">
-            <h3>제출 서류 <span className="en">자유양식으로서 다음의 자료들을 자유롭게 포함</span></h3>
-            <ul className="duties">
-              <li>이력서(경력 포함)</li>
-              <li>자기소개서(해결한 실제 문제, 본인의 주요 역할 중심)</li>
-              <li>포트폴리오 또는 작업산출물</li>
-            </ul>
-          </div>
-        </div>
-        <div className="callout">
-          <p>지원 방법 : 제출 서류를 <b>zip 파일로 압축</b>하여 채용담당자({applyEmail})로 송부</p>
-          <a className="applybtn" href={`mailto:${applyEmail}`}>채용담당자에게 송부 — {applyEmail}</a>
-        </div>
+        {detailsNotice ? (
+          <div className="callout"><p>{detailsNotice}</p></div>
+        ) : (
+          <>
+            <div className="req-grid">
+              <div className="req">
+                <h3>전형 절차</h3>
+                <ol className="steps">
+                  <li>서류 전형</li>
+                  <li>면접 및 실무과제·라이브 문제해결 평가</li>
+                  <li>최종 전형 및 처우 협의</li>
+                </ol>
+                <p className="stepnote">※ 필요시 전형 단계가 추가될 수 있음</p>
+              </div>
+              <div className="req">
+                <h3>제출 서류 <span className="en">자유양식으로서 다음의 자료들을 자유롭게 포함</span></h3>
+                <ul className="duties">
+                  <li>이력서(경력 포함)</li>
+                  <li>자기소개서(해결한 실제 문제, 본인의 주요 역할 중심)</li>
+                  <li>포트폴리오 또는 작업산출물</li>
+                </ul>
+              </div>
+            </div>
+            <div className="callout">
+              <p>지원 방법 : 제출 서류를 <b>zip 파일로 압축</b>하여 채용담당자({applyEmail})로 송부</p>
+              <a className="applybtn" href={`mailto:${applyEmail}`}>채용담당자에게 송부 — {applyEmail}</a>
+            </div>
+          </>
+        )}
       </div>
     </section>
   );
