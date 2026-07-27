@@ -93,7 +93,7 @@ export function SelectionProcessSection({
           </div>
         )}
         {detailsNotice ? (
-          <div className="callout"><p>{detailsNotice}</p></div>
+          <div className="callout">{detailsNotice}</div>
         ) : (
           <>
             <div className="req-grid">

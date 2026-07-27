@@ -135,7 +135,10 @@ export default function PlatformLead() {
             ["8.14(금) ~ 8.19(수) 중 1일", "면접전형"],
             ["면접전형 다음날", <>최종 합격자 발표 <span className="snote">(개별 유선 통보)</span></>],
           ]}
-          detailsNotice={<>전형 절차 및 방법은 <b>7월 27일</b> 안내 예정입니다.</>}
+          detailsNotice={<>
+            <p>전형 절차 및 방법은 <b>7월 27일</b> 안내 예정입니다.</p>
+            <a className="applybtn" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54573987" target="_blank" rel="noopener">채용 공고 보기 (사람인) ↗</a>
+          </>}
         />
         <ApplyContactSection alt />
       </main>
