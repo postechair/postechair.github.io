@@ -33,11 +33,16 @@ const SUBPAGES = [
   ["ax-engineer", "recruit/ax-engineer/index.html", ["AX 엔지니어", "사내 FDE", 'href="/#recruit"', "mailto:postech-air@postech.ac.kr", "면접 및 실무과제·라이브 문제해결 평가", "자기소개서(해결한 실제 문제, 본인의 주요 역할 중심)", "포트폴리오 또는 작업산출물", "채용담당자에게 송부"]],
 ];
 try {
-  readFileSync(join(docs, "recruit/index.html"), "utf8");
-  console.log("❌ /recruit/ 허브가 여전히 존재 (제거 지시됨)");
-  fail = 1;
+  const recruitIdx = readFileSync(join(docs, "recruit/index.html"), "utf8");
+  if (recruitIdx.includes("/#recruit")) {
+    console.log("✅ /recruit/ → 홈 #recruit 리다이렉트 (허브는 홈)");
+  } else {
+    console.log("❌ /recruit/ 인덱스가 홈 리다이렉트가 아님 (허브 콘텐츠?)");
+    fail = 1;
+  }
 } catch {
-  console.log("✅ /recruit/ 허브 제거됨");
+  console.log("❌ /recruit/ 리다이렉트 페이지 없음");
+  fail = 1;
 }
 for (const [name, rel, needles] of SUBPAGES) {
   let h;
