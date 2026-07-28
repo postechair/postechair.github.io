@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { RecruitTopbar, RecruitFooter, ApplyContactSection, SelectionProcessSection } from "@/components/recruit";
+import { RecruitTopbar, RecruitFooter, SelectionProcessSection } from "@/components/recruit";
 
 export const metadata: Metadata = {
   title: "AI 플랫폼 리드 엔지니어 채용 | POSTECH AIR",
@@ -129,6 +129,7 @@ export default function PlatformLead() {
         </section>
 
         <SelectionProcessSection
+          heading="전형 절차 · 제출 서류 · 지원 문의"
           schedule={[
             ["8.6(목) 24:00", "지원서 접수 마감"],
             ["8.7(금)", <>서류심사 합격자 발표 <span className="snote">(개별 유선 통보)</span></>],
@@ -136,10 +137,25 @@ export default function PlatformLead() {
             ["면접전형 다음날", <>최종 합격자 발표 <span className="snote">(개별 유선 통보)</span></>],
           ]}
           detailsNotice={
-            <a className="applybtn" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54573987" target="_blank" rel="noopener">채용 공고 확인(사람인) 및 지원하기 ↗</a>
+            <>
+              <div className="schedbox">
+                <div className="schedh">제출 서류</div>
+                <a className="applybtn" href="https://www.saramin.co.kr/zf_user/track-apply-form/update-company-apply-form-cnt/form_gb/company?rec_idx=54573987" target="_blank" rel="noopener">접수양식 링크(사람인) ↗</a>
+              </div>
+              <div className="schedbox">
+                <div className="schedh">제출 방법</div>
+                <p>- 제출방법 : 담당자 e-mail 접수 (oseam@postech.ac.kr)</p>
+                <p className="submitnote">☞ 지원서는 접수기간 내 e-mail 접수만 인정하며, 그 외의 방법으로 제출된 사항은 불인정하오니 유의 바랍니다.</p>
+                <a className="applybtn" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54573987" target="_blank" rel="noopener">채용 공고 보기(사람인) ↗</a>
+              </div>
+              <div className="schedbox">
+                <div className="schedh">문의</div>
+                <p>E : postech-air@postech.ac.kr / T : 054-279-3501</p>
+              </div>
+              <p className="workcond">근무지 포항공과대학교 (경북 포항) · 소속 기획처 AIR센터 · 고용형태·보수는 본교 규정에 따름 (세부 협의)</p>
+            </>
           }
         />
-        <ApplyContactSection alt />
       </main>
       <RecruitFooter />
     </>

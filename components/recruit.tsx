@@ -72,16 +72,19 @@ export function SelectionProcessSection({
   applyEmail = "oseam@postech.ac.kr",
   schedule,
   detailsNotice,
+  heading = "전형 절차 · 제출 서류",
 }: {
   applyEmail?: string;
   schedule?: [string, React.ReactNode][];
-  /** 주어지면 전형 절차·제출 서류·지원 방법 대신 이 안내 문구만 노출(공고별 미확정 시). 채용 일정은 그대로 유지 */
+  /** 주어지면 전형 절차·제출 서류·지원 방법 대신 이 커스텀 영역을 노출(공고별 구성이 다를 때). 채용 일정은 그대로 유지 */
   detailsNotice?: React.ReactNode;
+  /** 섹션 제목(공고별 병합 표기 가능). 기본 "전형 절차 · 제출 서류" */
+  heading?: string;
 }) {
   return (
     <section className="sec">
       <div className="wrap">
-        <h2 className="sech">전형 절차 · 제출 서류</h2>
+        <h2 className="sech">{heading}</h2>
         {schedule && (
           <div className="schedbox">
             <div className="schedh">채용 일정</div>
@@ -93,7 +96,7 @@ export function SelectionProcessSection({
           </div>
         )}
         {detailsNotice ? (
-          <div className="callout">{detailsNotice}</div>
+          detailsNotice
         ) : (
           <>
             <div className="req-grid">

@@ -122,6 +122,9 @@ a.card:hover { border-color: var(--primary-bg-active); box-shadow: var(--shadow-
 /* 채용 일정 타임라인 (공고별 상세) */
 .schedbox { border: 1px solid var(--line-subtle); border-top: 4px solid var(--primary); border-radius: 13px; background: var(--bg-elevated); box-shadow: var(--shadow-emphasize); padding: 20px 22px; margin-bottom: 14px; }
 .schedh { font-size: 16px; font-weight: 800; color: var(--fg-strong); margin-bottom: 16px; }
+.schedbox p { margin: 0 0 6px; font-size: 14.5px; line-height: 1.7; color: var(--fg-neutral); }
+.schedbox p:last-of-type { margin-bottom: 0; }
+.schedbox .submitnote { margin-top: 8px; font-size: 13.5px; color: var(--fg-alternative); }
 .sched { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; counter-reset: sch; }
 .sched li { display: flex; align-items: baseline; gap: 14px; position: relative; padding-left: 34px; counter-increment: sch; }
 .sched li::before { content: counter(sch); position: absolute; left: 0; top: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--primary); color: #fff; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
