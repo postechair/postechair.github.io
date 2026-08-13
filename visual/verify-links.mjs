@@ -29,7 +29,7 @@ for (const [name, needle] of REQUIRED) {
 /* 채용 페이지 — 존재 + 핵심 문구/링크 (허브는 제거됨 — 홈 #recruit 가 허브) */
 const SUBPAGES = [
   /* 2026-07-24: platform-lead는 채용 일정만 노출하고 전형절차·제출서류·지원방법은 '7.27 안내' 문구로 대체(오너 지시). ax-engineer는 기존 유지 */
-  ["platform-lead", "recruit/platform-lead/index.html", ["AI 플랫폼 리드 엔지니어", "가속과 통제를 동시에 하는 일", 'href="/#recruit"', "전형 절차 · 제출 서류 · 지원 문의", "채용 일정", "8.6(목) 24:00", "서류심사 합격자 발표", "면접전형", "제출 서류", "접수양식 링크(사람인)", "track-apply-form", "제출 방법", "불인정하오니", "채용 공고 보기(사람인)", "rec_idx=54573987", "postech-air@postech.ac.kr", "054-279-3501", "근무지 포항공과대학교"]],
+  ["platform-lead", "recruit/platform-lead/index.html", ["AI 플랫폼 리드 엔지니어", "가속과 통제를 동시에 하는 일", 'href="/#recruit"', "(채용 중)", "전형 절차 · 제출 서류 · 지원 문의", "제출 서류", "접수양식 링크(사람인)", "track-apply-form", "제출 방법", "불인정하오니", "채용 공고 보기(사람인)", "rec_idx=54573987", "postech-air@postech.ac.kr", "054-279-3501", "근무지 포항공과대학교"]],
   ["ax-engineer", "recruit/ax-engineer/index.html", ["AX 엔지니어", "사내 FDE", 'href="/#recruit"', "mailto:postech-air@postech.ac.kr", "면접 및 실무과제·라이브 문제해결 평가", "자기소개서(해결한 실제 문제, 본인의 주요 역할 중심)", "포트폴리오 또는 작업산출물", "채용담당자에게 송부"]],
 ];
 try {

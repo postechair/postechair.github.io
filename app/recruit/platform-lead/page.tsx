@@ -33,19 +33,18 @@ const STRATEGY = [
 ] as const;
 
 const MUST = [
-  <><b>상용 서비스·상품 개발 경험</b> — 사내 도구나 PoC가 아니라, 실사용자·가용성·장애 대응 책임이 있는 서비스를 만들고 운영해 본 경험</>,
-  <><b>프로덕션 환경의 설계·구축·운영 전 주기 경험</b> — 아키텍처 결정부터 배포·모니터링·장애 대응까지 경험</>,
-  <><b>클라우드 인프라 및 컨테이너 기반 배포 체계</b> 실무 경험 (Kubernetes, CI/CD 파이프라인 구축 등)</>,
-  <><b>LLM 기반 시스템 구축 경험</b> — 외부 API 연동뿐 아니라 <b>자체 모델 서빙</b>까지 포함한 실전 경험. RAG 파이프라인, MCP 서버 구축</>,
-  <><b>폐쇄망·망분리 환경에서의 개발·배포 체계 구축 경험</b> — 학내 시스템이 폐쇄망 기반이고 플랫폼을 자체 구축하므로, 패키지 미러·레지스트리·오프라인 배포의 제약을 실제로 다뤄 본 경험이 필요</>,
-  <><b>기술 표준·리뷰 체계를 설계하고 다른 개발자들이 따르게 만든 경험</b> — 개발 표준 및 Application Architecture 설계 및 구축 경험. 이에 대한 가이드라인을 작성하고 개발자 교육 및 관리 경험</>,
-  <><b>시니어급 경력</b>으로(관련 분야 15년 이상 수준), CTO / 개발 팀장 / Product Manager 경험</>,
+  <><b>상용 서비스·상품 개발 경험</b> — 실사용자가 쓰는 서비스를 만들고 운영해 본 경험 <span className="snote">(관련 경력 5년 내외)</span></>,
+  <><b>프로덕션 환경의 설계·구축·운영 경험</b> — 아키텍처 결정부터 배포·모니터링·장애 대응까지</>,
+  <><b>클라우드 인프라 및 컨테이너 기반 배포 체계</b> 실무 경험 (Kubernetes, CI/CD 파이프라인 등)</>,
+  <><b>LLM 기반 시스템 구축 경험</b> — API 연동, RAG 파이프라인 등 LLM을 활용한 서비스 개발 경험</>,
 ];
 
 const NICE = [
-  <><b>온프레미스 GPU 인프라 및 오픈소스 모델 서빙</b> 경험 (vLLM, SGLang 등)</>,
-  <><b>LLM 게이트웨이 / API 게이트웨이 및 관측(Observability) 체계</b>를 직접 구축한 경험</>,
-  <><b>에이전틱 AI 시스템</b> 설계·운영 경험</>,
+  <><b>자체 모델 서빙 경험</b> — 온프레미스 GPU 인프라 및 오픈소스 모델 서빙 (vLLM, SGLang 등)</>,
+  <><b>폐쇄망·망분리 환경에서의 개발·배포 경험</b> — 패키지 미러·레지스트리·오프라인 배포 등</>,
+  <><b>기술 표준·리뷰 체계를 설계해 본 경험</b> — 개발 표준·아키텍처 가이드라인 작성, 개발자 교육</>,
+  <><b>LLM 게이트웨이 / API 게이트웨이 및 관측(Observability) 체계</b> 구축 경험</>,
+  <><b>에이전틱 AI 시스템</b> 설계·운영 경험. <b>MCP 서버</b> 구축 경험</>,
   <>Single Source of Truth로서 <b>Datalake</b> 구축 경험</>,
   <><b>데이터 거버넌스·개인정보보호 정책</b> 수립 및 운영 경험</>,
   <><b>플랫폼 엔지니어링 또는 DevEx 조직</b> 경험 — 내부 개발자를 고객으로 대해 본 경험</>,
@@ -62,7 +61,7 @@ export default function PlatformLead() {
         <section className="hero">
           <div className="wrap">
             <p className="hero-eyebrow">AIR센터 채용</p>
-            <h1>AI 플랫폼 리드 엔지니어 <span className="h1-note">(2026.07.17~, 8.6(목) 24:00 지원 마감)</span></h1>
+            <h1>AI 플랫폼 리드 엔지니어 <span className="h1-note">(채용 중)</span></h1>
             <p className="hero-sub">AI Platform Lead Engineer</p>
           </div>
         </section>
@@ -130,12 +129,6 @@ export default function PlatformLead() {
 
         <SelectionProcessSection
           heading="전형 절차 · 제출 서류 · 지원 문의"
-          schedule={[
-            ["8.6(목) 24:00", "지원서 접수 마감"],
-            ["8.7(금)", <>서류심사 합격자 발표 <span className="snote">(개별 유선 통보)</span></>],
-            ["8.14(금) ~ 8.19(수) 중 1일", "면접전형"],
-            ["면접전형 다음날", <>최종 합격자 발표 <span className="snote">(개별 유선 통보)</span></>],
-          ]}
           detailsNotice={
             <>
               <div className="schedbox">
