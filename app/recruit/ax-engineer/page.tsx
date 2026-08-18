@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "POSTECH AIR센터 채용 — AX Engineer. 행정 현장에 임베드되어 문제 발굴부터 AI 솔루션 설계·개발·배포·정착까지 end-to-end로 책임지는 풀스택 엔지니어를 찾습니다.",
 };
 
-/* 주요 업무 (JD §3 — R&R 4개 영역) */
+/* 경험해볼 수 있는 업무 (JD §3 — R&R 4개 영역) */
 const DUTIES = [
   ["현장 발굴 · 문제 정의", [
     <>행정부서 담당자와 직접 협업하여 업무 흐름·데이터·규정·예외 케이스를 파악</>,
@@ -91,7 +91,7 @@ export default function AxEngineer() {
 
         <section className="sec">
           <div className="wrap">
-            <h2 className="sech">주요 업무</h2>
+            <h2 className="sech">경험해볼 수 있는 업무</h2>
             {DUTIES.map(([t, items]) => (
               <div className="dutyblock" key={t as string}>
                 <div className="db-h"><span className="db-pill">{t}</span></div>
