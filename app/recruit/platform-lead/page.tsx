@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "POSTECH AIR센터 채용 — AI Platform Lead Engineer. LLM 게이트웨이, 자체 모델 서빙, 공용 RAG 스택, 개발 표준, 거버넌스 정책을 설계·구축·운영할 플랫폼 리드를 찾습니다.",
 };
 
-/* Control / Support / 전략 — 주요 업무 (JD 원문) */
+/* Control / Support / 전략 — 경험해볼 수 있는 업무 (JD 원문) */
 const CONTROL = [
   ["LLM 게이트웨이 구축·운영", <>외부 API(Claude, OpenAI 등)와 <b>내부 자체 모델(온프레미스 서빙)을 아우르는 단일 창구</b>. 모델 종류와 무관하게 인증·사용량·비용·감사 로그를 중앙에서 관측하고, 데이터 민감도에 따라 내부 모델과 외부 API로 <b>자동 라우팅</b>하는 정책 엔진 설계</>],
   ["데이터 거버넌스 정책 수립", <>데이터 분류 기준을 정의하고, 이를 <b>&ldquo;어떤 데이터가 어떤 모델까지 갈 수 있는가&rdquo;</b>로 구체화. 개인정보·민감정보의 외부 LLM 전송 통제 및 반출 차단, 민감 데이터의 내부 모델 처리 원칙</>],
@@ -75,7 +75,7 @@ export default function PlatformLead() {
 
         <section className="sec">
           <div className="wrap">
-            <h2 className="sech">주요 업무</h2>
+            <h2 className="sech">경험해볼 수 있는 업무</h2>
             <div className="dutyblock">
               <div className="db-h"><span className="db-pill">Control 축</span></div>
               <ul className="duties">
