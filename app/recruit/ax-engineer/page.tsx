@@ -133,7 +133,7 @@ export default function AxEngineer() {
               </div>
               <div className="schedbox">
                 <div className="schedh">제출 방법</div>
-                <p>- 제출방법 : 담당자 e-mail 접수 (postech-air@postech.ac.kr)</p>
+                <p>- 제출방법 : 담당자 e-mail 접수 (oseam@postech.ac.kr)</p>
                 <p className="submitnote">☞ 지원서는 접수기간 내 e-mail 접수만 인정하며, 그 외의 방법으로 제출된 사항은 불인정하오니 유의 바랍니다.</p>
                 <a className="applybtn" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54573987" target="_blank" rel="noopener">채용 공고 보기(사람인) ↗</a>
               </div>

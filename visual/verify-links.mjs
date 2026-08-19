@@ -60,14 +60,17 @@ for (const [name, rel, needles] of SUBPAGES) {
   if (missing.length) fail = 1;
 }
 
-/* AX 엔지니어 지원 이메일은 postech-air (oseam 아님, 2026-07-17 오너 지시) */
+/* 두 JD의 제출 방법(담당자 접수 이메일)은 동일해야 한다 — 2026-08-18 오너 지시로 ax도 oseam으로 통일.
+   (2026-07-17의 "ax는 postech-air" 지시를 대체한다. 문의처 postech-air@는 두 페이지 모두 그대로 유지) */
 {
-  const axHtml = readFileSync(join(docs, "recruit/ax-engineer/index.html"), "utf8");
-  if (axHtml.includes("oseam")) {
-    console.log("❌ AX 엔지니어 페이지에 oseam 이메일 잔존 (postech-air 여야 함)");
-    fail = 1;
+  const pick = (rel) => (readFileSync(join(docs, rel), "utf8").match(/담당자 e-mail 접수 \(([^)]*)\)/) || [])[1];
+  const plMail = pick("recruit/platform-lead/index.html");
+  const axMail = pick("recruit/ax-engineer/index.html");
+  if (plMail && axMail && plMail === axMail) {
+    console.log(`✅ 두 JD 제출 이메일 일치 (${axMail})`);
   } else {
-    console.log("✅ AX 엔지니어 지원 이메일 = postech-air (oseam 없음)");
+    console.log(`❌ 두 JD 제출 이메일 불일치 — platform-lead=${plMail} / ax-engineer=${axMail}`);
+    fail = 1;
   }
 }
 
