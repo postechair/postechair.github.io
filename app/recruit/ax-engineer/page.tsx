@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { RecruitTopbar, RecruitFooter, ApplyContactSection, SelectionProcessSection } from "@/components/recruit";
+import { RecruitTopbar, RecruitFooter, SelectionProcessSection } from "@/components/recruit";
 
 export const metadata: Metadata = {
   title: "AX 엔지니어 채용 | POSTECH AIR",
@@ -53,7 +53,7 @@ export default function AxEngineer() {
         <section className="hero">
           <div className="wrap">
             <p className="hero-eyebrow">AIR센터 채용</p>
-            <h1>AX 엔지니어 <span className="h1-note">(상시 채용, 채용 완료시 마감)</span></h1>
+            <h1>AX 엔지니어 <span className="h1-note">(채용 중)</span></h1>
             <p className="hero-sub">AX Engineer</p>
           </div>
         </section>
@@ -120,13 +120,35 @@ export default function AxEngineer() {
                 </ul>
               </div>
             </div>
-            <p className="stepnote">※ 경력 연수·학위보다 <b>포트폴리오·실문제 해결 능력</b>을 우선 평가합니다. (신입/경력 무관, 고잠재력 주니어 지원 환영)</p>
           </div>
         </section>
 
-        <SelectionProcessSection applyEmail="postech-air@postech.ac.kr" />
-
-        <ApplyContactSection alt />
+        <SelectionProcessSection
+          heading="전형 절차 · 제출 서류 · 지원 문의"
+          detailsNotice={
+            <>
+              <div className="schedbox">
+                <div className="schedh">제출 서류</div>
+                <p>자유양식으로서 다음의 자료들을 자유롭게 포함</p>
+                <ul className="duties">
+                  <li>이력서(경력 포함)</li>
+                  <li>자기소개서(해결한 실제 문제, 본인의 주요 역할 중심)</li>
+                  <li>포트폴리오 또는 작업산출물</li>
+                </ul>
+              </div>
+              <div className="schedbox">
+                <div className="schedh">제출 방법</div>
+                <p>- 제출방법 : 담당자 e-mail 접수 (postech-air@postech.ac.kr)</p>
+                <p className="submitnote">☞ 지원서는 e-mail 접수만 인정하며, 그 외의 방법으로 제출된 사항은 불인정하오니 유의 바랍니다.</p>
+              </div>
+              <div className="schedbox">
+                <div className="schedh">문의</div>
+                <p>E : postech-air@postech.ac.kr / T : 054-279-3501</p>
+              </div>
+              <p className="workcond">근무지 포항공과대학교 (경북 포항) · 소속 기획처 AIR센터 · 고용형태·보수는 본교 규정에 따름 (세부 협의)</p>
+            </>
+          }
+        />
       </main>
       <RecruitFooter />
     </>

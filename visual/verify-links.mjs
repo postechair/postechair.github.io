@@ -30,7 +30,9 @@ for (const [name, needle] of REQUIRED) {
 const SUBPAGES = [
   /* 2026-07-24: platform-lead는 채용 일정만 노출하고 전형절차·제출서류·지원방법은 '7.27 안내' 문구로 대체(오너 지시). ax-engineer는 기존 유지 */
   ["platform-lead", "recruit/platform-lead/index.html", ["AI 플랫폼 리드 엔지니어", "가속과 통제를 동시에 하는 일", 'href="/#recruit"', "(채용 중)", "전형 절차 · 제출 서류 · 지원 문의", "제출 서류", "접수양식 링크(사람인)", "track-apply-form", "제출 방법", "불인정하오니", "채용 공고 보기(사람인)", "rec_idx=54573987", "postech-air@postech.ac.kr", "054-279-3501", "근무지 포항공과대학교"]],
-  ["ax-engineer", "recruit/ax-engineer/index.html", ["AX 엔지니어", "사내 FDE", 'href="/#recruit"', "mailto:postech-air@postech.ac.kr", "면접 및 실무과제·라이브 문제해결 평가", "자기소개서(해결한 실제 문제, 본인의 주요 역할 중심)", "포트폴리오 또는 작업산출물", "채용담당자에게 송부"]],
+  /* 2026-08-18: ax-engineer도 platform-lead와 동일 톤으로 — (채용 중) + 병합 섹션(제출 서류/제출 방법/문의 카드).
+     전형 절차 3단계·지원 방법 callout·ApplyContactSection이 빠지면서 mailto도 사라졌다(오너 지시). */
+  ["ax-engineer", "recruit/ax-engineer/index.html", ["AX 엔지니어", "사내 FDE", 'href="/#recruit"', "(채용 중)", "전형 절차 · 제출 서류 · 지원 문의", "제출 서류", "자기소개서(해결한 실제 문제, 본인의 주요 역할 중심)", "포트폴리오 또는 작업산출물", "제출 방법", "불인정하오니", "postech-air@postech.ac.kr", "054-279-3501", "근무지 포항공과대학교"]],
 ];
 try {
   const recruitIdx = readFileSync(join(docs, "recruit/index.html"), "utf8");
