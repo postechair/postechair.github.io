@@ -129,17 +129,13 @@ export default function AxEngineer() {
             <>
               <div className="schedbox">
                 <div className="schedh">제출 서류</div>
-                <p>자유양식으로서 다음의 자료들을 자유롭게 포함</p>
-                <ul className="duties">
-                  <li>이력서(경력 포함)</li>
-                  <li>자기소개서(해결한 실제 문제, 본인의 주요 역할 중심)</li>
-                  <li>포트폴리오 또는 작업산출물</li>
-                </ul>
+                <a className="applybtn" href="https://www.saramin.co.kr/zf_user/track-apply-form/update-company-apply-form-cnt/form_gb/company?rec_idx=54573987" target="_blank" rel="noopener">접수양식 링크(사람인) ↗</a>
               </div>
               <div className="schedbox">
                 <div className="schedh">제출 방법</div>
                 <p>- 제출방법 : 담당자 e-mail 접수 (postech-air@postech.ac.kr)</p>
-                <p className="submitnote">☞ 지원서는 e-mail 접수만 인정하며, 그 외의 방법으로 제출된 사항은 불인정하오니 유의 바랍니다.</p>
+                <p className="submitnote">☞ 지원서는 접수기간 내 e-mail 접수만 인정하며, 그 외의 방법으로 제출된 사항은 불인정하오니 유의 바랍니다.</p>
+                <a className="applybtn" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54573987" target="_blank" rel="noopener">채용 공고 보기(사람인) ↗</a>
               </div>
               <div className="schedbox">
                 <div className="schedh">문의</div>
